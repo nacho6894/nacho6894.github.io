@@ -1,0 +1,232 @@
+html {
+    background-color: darkslategrey;
+}
+body {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 90%;
+    width: 100%;
+    max-width: 960px;
+    background-color: white;
+    margin: 1em auto;
+    padding: 0;
+    border: 1px solid black;
+}
+section, article, aside, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+}
+section {
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+}
+
+a { font-weight: bold; }
+a:link { color: lime; }
+a:visited { color: navy; }
+a:hover, a:focus { color: gold; }
+
+p { padding-bottom: 0.5em; }
+
+em { font-weight: bold; }
+
+
+header {
+    background-color: blue;
+    background-image: -webkit-linear-gradient(right, white 0%, grey 30%, blue 100%);
+    background-image: -moz-linear-gradient(right, white 0%, grey 30%, blue 100%);
+    background-image: -o-linear-gradient(right, white 0%, grey 30%, blue 100%);
+    background-image: linear-gradient(right, white 0%, grey 30%, blue 100%);
+    padding-bottom: 1em;
+}
+
+header h2 {
+    font-family: 'Spectral SC', serif;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 3px 0 black;
+    padding-top: .25em;
+    text-align: center;
+}
+header h3 {
+    font-family: 'Roboto Condensed', sans-serif
+    font-size: 150%;
+    text-align: center;
+}
+
+
+#nav_menu ul {
+    list-style: none;
+}
+#nav_menu ul li {
+    float: left;
+    width: 19.79167%;
+    border-right: 2px solid white;
+}
+#nav_menu ul li a {
+    text-align: center;
+    display: block;
+    padding: 1em 0;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+#nav_menu ul li.lastitem {
+    width: 20%;
+    border-right: none;
+}
+#nav_menu a.current {
+    color: gray;
+}
+
+
+section {
+    width: 67.1875%;
+    padding-left: 2.08333%;
+    padding-right: 2.08333%;
+    float: right;
+}
+section h1 {
+    font-size: 200%;
+    margin-bottom: 0.5em;
+    color: grey;
+}
+
+
+
+
+aside {
+    width: 26.04166%;
+    float: right;
+    padding-left: 2.60416%;
+}
+aside h2 {
+    font-size: 125%;
+    color: #696969;
+    margin-top: 1.7em;
+    padding-bottom: .5em;
+}
+aside ul {
+    list-style: none;
+}
+aside li {
+    margin-bottom: .5em;
+}
+
+aside img {
+    border: 1px solid #696969;
+}
+aside .site {
+    margin-left: 4%;
+}
+
+
+footer {
+    clear: both;
+    padding-top: 1em;
+    background-color: white;
+    background-image: -webkit-linear-gradient(left, white 0%, grey 30%, blue 100%);
+    background-image: -moz-linear-gradient(left, white 0%, grey 30%, blue 100%);
+    background-image: -o-linear-gradient(left, white 0%, grey 30%, blue 100%);
+    background-image: linear-gradient(left, white 0%, grey 30%, blue 100%);
+}
+footer p {
+    font-size: 80%;
+    color: white;
+    margin-left: 2.60416%;
+    padding-bottom: 1em;
+}
+#mobile_menu {
+    display: none;
+}
+
+@media only screen and (max-width: 959px) {
+    #nav_menu ul li {
+        width: 19.73368%;
+    }
+    section h1 {
+        font-size: 175%;
+    }
+    figcaption {
+        font-size: 80%;
+    }
+    aside h2 {
+        font-size: 110%;
+    }
+    aside ul li {
+        font-size: 90%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #nav_menu {
+        display: none;
+    }
+    #mobile_menu {
+        display: block;
+    }
+    .slicknav_menu {
+        background-color: black !important;
+    }
+    .slicknav_btn {
+        background-color: #696969 !important;
+    }
+    header h2 {
+        font-size: 300%;
+        margin-bottom: .25em;
+    }
+    header h3 {
+        font-size: 130%;
+    }
+    section, aside {
+        float: none;
+        width: 95.83334%;
+    }
+    section {
+        margin-bottom: 0;
+    }
+    section h1 {
+        font-size: 160%;
+    }
+    article {
+        -moz-column-count: 1;
+        -webkit-column-count: 1;
+        column-count: 1;
+    }
+    figure {
+        float: left;
+        width: 40%;
+    }
+    aside {
+        padding: 0 2.08333%;
+        margin-bottom: 2em;
+    }
+    aside h2 {
+        margin-top: 0;
+    }
+    aside ul {
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    section h1 {
+        font-size: 140%;
+    }
+    figure {
+        float: none;
+        width: 100%;
+    }
+    aside {
+        width: 75%;
+        padding: 0 12.5%;
+    }
+    aside ul {
+        -moz-column-count: 1;
+        -webkit-column-count: 1;
+        column-count: 1;
+
+    }
+}
